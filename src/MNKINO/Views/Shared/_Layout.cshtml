@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MNKINO - @ViewBag.Title</title>
+	<meta charset="utf-8"/
+	
+		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
+		<link rel="stylesheet" href="~/lib/bootswatch/journal/bootstrap.min.css" /> 
+		<link rel="stylesheet" href="~/lib/Font-Awesome/css/font-awesome.min.css" /> 
+		<link rel="stylesheet" href="~/styles/site.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="jumbotron">
+			<h1>MNKINO</h1>
+			<!--img src="~/img/mnkino.png"-->
+			<p>An excuse for anyone to make a film</p>
+		</div>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<a asp-controller="App" asp-action="Index" class="btn btn-primary btn-sm">
+							HOME
+						</a>
+					</li>
+					<li>
+						<a asp-controller="App" asp-action="Videos" class="btn btn-primary btn-sm">
+							VIDEOS
+						</a>
+					</li>
+					<li>
+						<a asp-controller="App" asp-action="Submit" class="btn btn-primary btn-sm">
+							SUBMIT
+						</a>
+					</li>
+					<li>
+						<a asp-controller="App" asp-action="About" class="btn btn-primary btn-sm">
+							ABOUT
+						</a>
+					</li>
+					<li>
+						<a asp-controller="App" asp-action="Contact" class="btn btn-primary btn-sm">
+							CONTACT
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn btn-primary btn-sm">
+							DONATE
+						</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#" class="btn btn-sm">
+							<i class="fa fa-facebook-square" />
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn btn-sm">
+							<i class="fa fa-twitter-square" />
+						</a>
+						</li>
+					<li>
+						<a href="#" class="btn btn-sm">
+							<i class="fa fa-youtube-square" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="main" class="container-fluid">
+			<div>
+				@RenderBody()
+			</div>
+			<div id="footer" class="container-fluid">
+				<a href="http://www.github.com/rmasen/MNKINO">
+				<i class="fa fa-creative-commons" /> 2015 MNKINO
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/site.js"></script>
+	
+	@RenderSection("Scripts",false)
+</body>
+</html>
