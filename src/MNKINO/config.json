@@ -1,0 +1,8 @@
+﻿{
+  "AppSettings": {
+    "SiteEmailAddress": "mnkino@gmail.com"
+  },
+  "Data": {
+    "MNKINOConnection": "Server=(localdb)\\ProjectsV12;Database=MNKINO;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  }
+}
