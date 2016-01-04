@@ -16,6 +16,9 @@ namespace MNKINO.Controllers.Web
             _repository = repository;
         }
 
-
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }

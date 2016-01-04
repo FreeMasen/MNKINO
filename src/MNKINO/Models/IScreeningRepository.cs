@@ -10,7 +10,7 @@ namespace MNKINO.Models
         bool SaveAll();
         IEnumerable<Screening> GetAllScreenings();
         IEnumerable<Screening> GetAllScreeningsWithVideos();
-        void AddScreenings(Screening newScreening);
+        void AddScreening(Screening newScreening);
         Screening GetScreeningByNumber(int number);
         Screening GetScreeningByTheme(string theme);
         void AddVideo(int screeingNumber, Video newVideo);

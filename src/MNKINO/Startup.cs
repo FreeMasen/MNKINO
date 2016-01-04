@@ -39,7 +39,7 @@ namespace MNKINO
 
             services.AddTransient<MnkinoContextSeedData>();
 
-            services.AddScoped<IScreeningRepository, ScreeningRepolistorycs>();
+            services.AddScoped<IScreeningRepository, ScreeningRepolistory>();
 
             services.AddLogging();
         }

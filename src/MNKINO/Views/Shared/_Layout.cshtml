@@ -5,80 +5,84 @@
     <meta charset="utf-8"/>
 	
 		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
-		<link rel="stylesheet" href="~/lib/bootswatch/journal/bootstrap.min.css" /> 
-		<link rel="stylesheet" href="~/lib/Font-Awesome/css/font-awesome.min.css" /> 
-		<link rel="stylesheet" href="~/styles/site.css" />
+		<link rel="stylesheet" href="~/lib/bootswatch/journal/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/Font-Awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css"/>
 </head>
 <body>
 	<div class="wrapper">
-		<div class="jumbotron">
-			<h1>MNKINO</h1>
-			<img src="~/img/mnkino-logo.png" alt="MNKINO">
-			<p>An excuse for anyone to make a film</p>
-		</div>
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<ul class="nav navbar-nav navbar-left">
-					<li>
-						<a asp-controller="App" asp-action="Index" class="btn btn-primary btn-sm">
-							HOME
-						</a>
-					</li>
-					<li>
-						<a asp-controller="App" asp-action="Videos" class="btn btn-primary btn-sm">
-							VIDEOS
-						</a>
-					</li>
-					<li>
-						<a asp-controller="App" asp-action="Submit" class="btn btn-primary btn-sm">
-							SUBMIT
-						</a>
-					</li>
-					<li>
-						<a asp-controller="App" asp-action="About" class="btn btn-primary btn-sm">
-							ABOUT
-						</a>
-					</li>
-					<li>
-						<a asp-controller="App" asp-action="Contact" class="btn btn-primary btn-sm">
-							CONTACT
-						</a>
-					</li>
-					<li>
-						<a href="#" class="btn btn-primary btn-sm">
-							DONATE
-						</a>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="#" class="btn btn-sm">
-							<i class="fa fa-facebook-square" />
-						</a>
-					</li>
-					<li>
-						<a href="#" class="btn btn-sm">
-							<i class="fa fa-twitter-square" />
-						</a>
-						</li>
-					<li>
-						<a href="#" class="btn btn-sm">
-							<i class="fa fa-youtube-square" />
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<div id="main" class="container-fluid">
-			<div>
-				@RenderBody()
-			</div>
-			<div id="footer" class="container-fluid">
-				<a href="http://www.github.com/rmasen/MNKINO">
-				<i class="fa fa-creative-commons" /> 2015 MNKINO
-				</a>
-			</div>
-		</div>
+	    <div class="dropdown-header">
+	        <img src="~/img/mnkino-logo.png" alt="MNKINO">
+	    </div>
+	    <nav class="navbar navbar-default">
+	        <div class="container-fluid">
+	            <ul class="nav navbar-nav navbar-left">
+	                <li>
+	                    <a asp-controller="App" asp-action="Index" class="btn btn-sm">
+	                        HOME
+	                    </a>
+	                </li>
+	                <li>
+	                    <a asp-controller="App" asp-action="Videos" class="btn btn-sm">
+	                        VIDEOS
+	                    </a>
+	                </li>
+	                <li>
+	                    <a asp-controller="App" asp-action="Submit" class="btn btn-sm">
+	                        SUBMIT
+	                    </a>
+	                </li>
+	                <li>
+	                    <a asp-controller="App" asp-action="About" class="btn btn-sm">
+	                        ABOUT
+	                    </a>
+	                </li>
+	                <li>
+	                    <a asp-controller="App" asp-action="Contact" class="btn btn-sm">
+	                        CONTACT
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#" class="btn btn-sm">
+	                        DONATE
+	                    </a>
+	                </li>
+	            </ul>
+	            <ul class="nav navbar-nav navbar-right">
+	                <li>
+	                    <a href="https://givemn.org/fundraiser/mnkino5612a0828eb5a" class="btn btn-sm">
+	                        <i class="fa fa-facebook-square"></i>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="https://twitter.com/mnkino" class="btn btn-sm">
+	                        <i class="fa fa-twitter-square"></i>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="https://www.youtube.com/user/MNKINOvids" class="btn btn-sm">
+	                        <i class="fa fa-youtube-square"></i>
+	                    </a>
+	                </li>
+	            </ul>
+	        </div>
+	    </nav>
+	    <div id="main" class="container-fluid">
+	        <div>
+	            @RenderBody()
+	        </div>
+	    </div>
+        <nav id="footer" class="nav navbar-default navbar-fixed-bottom">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://www.github.com/rmasen/MNKINO" class="btn btn-sm">
+                            <i class="fa fa-creative-commons"></i> 2016 MNKINO
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 	</div>
 	
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>

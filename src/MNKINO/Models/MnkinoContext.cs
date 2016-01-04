@@ -12,7 +12,7 @@ namespace MNKINO.Models
         }
 
         public DbSet<Screening> Screenings { get; set; }
-        public DbSet<Video> Type { get; set; }
+        public DbSet<Video> Videos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
