@@ -41,7 +41,7 @@ namespace MNKINO.Models
 
         public IEnumerable<Screening> GetAllScreeningsWithVideos()
         {
-           try
+            try
             {
                 return _context.Screenings
                     .Include(t => t.Videos)

@@ -260,6 +260,121 @@ namespace MNKINO.Models
 
                 _context.Screenings.Add(repeatRepeat);
                 _context.Videos.AddRange(repeatRepeat.Videos);
+
+                var CutCopyPaste = new Screening()
+                {
+                    MysteryMeat = new Uri(""),
+                    Number = 5,
+                    Theme = $"Cut/Copy/Paste",
+                    Videos = new List<Video>()
+                    {
+                     new Video()
+                        {
+                            Author = "Peter Kirschmann & Oanh Vu",
+                            OnlineHome = new Uri(""),
+                            Title = "Rock, Paper, Scissors!"
+                        },
+
+                        new Video()
+                        {
+                            Author = "Ken R. Koense",
+                            OnlineHome = new Uri(""),
+                            Title = "Chance: Ode to John Cage"
+                        },
+
+                        new Video()
+                        {
+                            Author = "Jack Kentala",
+                            OnlineHome = new Uri(""),
+                            Title = "Cut Copy Paste, Or: The Cop Out (I'm So Sorry)"
+                        },
+
+                        new Video()
+                        {
+                            Author = "Lindsey Borgerson",
+                            OnlineHome = new Uri(""),
+                            Title = "Baby Got Sh-Boom"
+                        },
+
+                        new Video()
+                        {
+                            Author = "Andy Dayton",
+                            OnlineHome = new Uri(""),
+                            Title = "November"
+                        },
+
+                        new Video()
+                        {
+                            Author = "Nicholas Knutson",
+                            OnlineHome = new Uri(""),
+                            Title = "Rythm and Motion Study I"
+                        },
+
+                        new Video()
+                        {
+                            Author = "John Akre",
+                            OnlineHome = new Uri(""),
+                            Title = "Cut Copy Taste Torture"
+                        }
+                    }
+                };
+
+                _context.Screenings.Add(CutCopyPaste);
+                _context.Videos.AddRange(CutCopyPaste.Videos);
+
+                var Nonfiction = new Screening()
+                {
+                    MysteryMeat = new Uri(""),
+                    Number = 5,
+                    Theme = "Non-fiction",
+                    Videos = new List<Video>()
+                    {
+                     new Video()
+                        {
+                            Author = "Jack Kentala",
+                            OnlineHome = new Uri(""),
+                            Title = "The Archetapes Vol. I: Filmmaking and Film-Aching"
+                        },
+
+                        new Video()
+                        {
+                            Author = "Ken R. Koense",
+                            OnlineHome = new Uri(""),
+                            Title = "Chance: Ode to John Cage"
+                        },
+
+                        new Video()
+                        {
+                            Author = "Lindsey Borgerson",
+                            OnlineHome = new Uri(""),
+                            Title = "Gazelles"
+                        },
+
+                        new Video()
+                        {
+                            Author = "Dustin Lundebrek",
+                            OnlineHome = new Uri(""),
+                            Title = "Or Best Offer"
+                        },
+
+                        new Video()
+                        {
+                            Author = "Andy Dayton",
+                            OnlineHome = new Uri(""),
+                            Title = "This Old Cabin"
+                        },
+
+                        new Video()
+                        {
+                            Author = "Nicholas Knutson",
+                            OnlineHome = new Uri(""),
+                            Title = "untitled"
+                        }
+                    }
+                };
+
+                _context.Screenings.Add(Nonfiction);
+                _context.Videos.AddRange(Nonfiction.Videos);
             }
         }
     }

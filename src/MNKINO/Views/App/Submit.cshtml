@@ -1,1 +1,47 @@
-﻿
+﻿@{
+    ViewBag.Tite = "Submit Video";
+}
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h2>Submit Video</h2>
+        <form method="post">
+            @if (ViewBag.Message != null)
+            {
+                <div>@ViewBag.Message</div>
+            }
+        </form>
+        <div class="">
+            <div class="form-group">
+                <label>Your name</label>
+                <input class="form-control" />
+                <span class="text-muted"></span>
+            </div>
+            <div class="form-group">
+                <label>Title of your video</label>
+                <input class="form-control" />
+                <span class="text-muted"></span>
+            </div>
+            <div class="form-group">
+                <label>MNKINO Number</label>
+                <select class="form-control">
+                    @{for (int i = 1; i < 1000; i++)
+                    {
+                        <option>i</option>
+                        }
+                    }
+                </select>
+                <span class="text-muted"></span>
+            </div>
+            <div class="form-group">
+                <label>Upload Video</label>
+                <input class="form-control" />
+                <input type="Submit" value="Browse" />
+                <span class="text-muted"></span>
+            </div>
+            <div class="form-group">
+                <a asp-controller="App" asp-action="Index" class="btn btn-default">Cancel</a>
+                <input type="Submit" value="Upload video" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+</div>

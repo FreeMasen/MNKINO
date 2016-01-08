@@ -1,10 +1,16 @@
-﻿@{
+﻿@model MNKINO.ViewModels.NextScreeningViewModel
+@{
     ViewBag.Title = "Home Page";
 }
-<div class="">
+<div class="Row">
     <h1>Welcome to MNKINO</h1>
-    <p></p>
-</div>
-<div>
-    
+    <h4><u>Our next MNKINO</u></h4>
+    <div>
+        <div>
+            <label asp-for="Theme"></label>
+            <label asp-for="Date"></label>
+            <label asp-for="ScreeningNumber"></label>
+            <label asp-for="MysteryMeat"></label>
+        </div>
+    </div>
 </div>
